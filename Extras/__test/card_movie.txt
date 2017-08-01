@@ -1,0 +1,17 @@
+                <div class="ui card">
+                  <div class="image"> 
+                    <a class="ui white left corner label" data-content="<?php echo $snapshot->getValue()['sinopsis']; ?>">
+                      <i class="tiny link question icon"></i>
+                    </a>                  
+                    <a class="ui white right ribbon label"><?php echo $snapshot->getValue()['nombre']; ?></a>
+                    <img src="<?php echo $snapshot->getValue()['thumbnails']; ?>">
+                  </div>
+                  <div class="content">
+                    <div class="header"><?php echo $snapshot->getValue()['nombre']; ?></div>
+                    <div class="description"></div>
+                  </div>
+                  <div class="ui two bottom attached buttons">
+                    <div class="ui button"><i class="file code outline icon"></i> <?php echo $snapshot->getValue()['fecha']; ?> </div>
+                    <a class="ui primary button" href="watch/<?php echo $reference->getKey(); ?>"><i class="linkify icon"></i> Mirar </a>
+                  </div>
+                </div>
